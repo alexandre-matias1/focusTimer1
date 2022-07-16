@@ -1,0 +1,105 @@
+:root{
+  font-size: 62.5%;
+  --bg-color:rgb(255, 255, 255);
+  --bg-akatsuki: #A40000;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+main{
+  font-family: 'Roboto', sans-serif;
+  font-size: 12.6rem;
+  color: #323238;
+  display: flex;
+  justify-content: center;
+}
+
+.timer-container{
+  display: flex;
+  height: 100vh;
+  gap: 19.2rem;
+}
+.clock{
+  display: flex;
+}
+
+span{
+  display: flex;
+}
+
+.timer{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+}
+
+.buttons-timer{
+  display: flex;
+  gap: 4.0rem;
+}
+
+.relax-buttons{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3.2rem;
+  
+  align-content: center;
+  width: 33.8rem;
+
+}
+button{
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.hide{
+  display: none;
+}
+
+@keyframes linha{
+  
+  0% {d: path("M16 78H15")}
+  100%{d: path("M16 78H121")}
+}
+
+
+button:hover .akatsuki{
+  fill: var(--bg-akatsuki)
+}
+
+button:hover .vila{
+  fill: var(--bg-color);
+  stroke: var(--bg-color);
+  
+}
+
+button, .traço{
+  animation-name: linha;
+  animation-duration: 1.5s;
+}
+
+
+.mode{
+  position:absolute;
+  right: 60px;
+  opacity: 0.8;
+  display: none;
+}
+
+.clear{
+  display:none
+}
+
+
+
