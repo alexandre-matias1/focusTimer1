@@ -32,6 +32,7 @@ const sasori = "url(https://criticalhits.com.br/wp-content/uploads/2022/04/sasor
 const deidara = "url(https://s.aficionados.com.br/imagens/deidara-1_cke.jpg)"
 const pain = "url(https://pbs.twimg.com/media/EgnI5FpX0AIO03c.jpg)"
 
+
 export {
   buttonPlay,
   buttonStop,
@@ -61,5 +62,9 @@ export {
   itachi,
   sasori,
   pain,
-  deidara
+  deidara,
+  audioKonoha,
+  audioAreia,
+  audioChuva,
+  audioPedra
 }

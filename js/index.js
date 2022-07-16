@@ -30,6 +30,7 @@ import {
 
 import { Timer } from "./timer.js"
 import { Icons } from "./buttonIcons.js"
+// import { Sounds } from "./sounds.js"
 
 let timerTimeout
 let minutes = Number(minutesDisplay.textContent)
@@ -61,6 +62,7 @@ const icons = Icons({
     pain,
     bg
 })
+
 
 
 
