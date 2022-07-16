@@ -13,7 +13,7 @@ import {
   traçoAreia,
   traçoPedra,
   traçoChuva,
-  akatsuki,
+  bg,
   bgKonoha,
   bgAreia,
   bgChuva,
@@ -21,7 +21,11 @@ import {
   logoKonoha,
   logoAreia,
   logoChuva,
-  logoPedra
+  logoPedra,
+  itachi,
+  sasori,
+  pain,
+  deidara
 } from "./elements.js"
 
 import { Timer } from "./timer.js"
@@ -29,12 +33,13 @@ import { Icons } from "./buttonIcons.js"
 
 let timerTimeout
 let minutes = Number(minutesDisplay.textContent)
-let newMinutes = Number(minutesDisplay.textContent)
 
 const timer = Timer({
   minutesDisplay,
   secondsDisplay,
-  timerTimeout
+  timerTimeout,
+  minutes,
+  bg
 })
 
 const icons = Icons({
@@ -50,7 +55,14 @@ const icons = Icons({
     traçoAreia,
     traçoPedra,
     traçoChuva,
+    itachi,
+    sasori,
+    deidara,
+    pain,
+    bg
 })
+
+
 
 
 buttonPlay.addEventListener('click', function(){
@@ -90,7 +102,8 @@ konoha.addEventListener('click', function(){
   icons.resetBgAndLogo(bgAreia,logoAreia)
   icons.resetBgAndLogo(bgPedra, logoPedra)
   icons.resetBgAndLogo(bgChuva, logoChuva)
-  
+  icons.background(itachi)
+
   
   
   traçoAreia.classList.add('hide')
@@ -106,7 +119,7 @@ areia.addEventListener('click', function(){
   icons.resetBgAndLogo(bgKonoha,logoKonoha)
   icons.resetBgAndLogo(bgPedra, logoPedra)
   icons.resetBgAndLogo(bgChuva, logoChuva)
-  
+  icons.background(sasori)
   
   
   traçoKonoha.classList.add('hide')
@@ -122,6 +135,8 @@ pedra.addEventListener('click', function(){
   icons.resetBgAndLogo(bgKonoha,logoKonoha)
   icons.resetBgAndLogo(bgAreia, logoAreia)
   icons.resetBgAndLogo(bgChuva, logoChuva)
+  icons.background(deidara)
+
   
   traçoKonoha.classList.add('hide')
   traçoAreia.classList.add('hide')
@@ -136,6 +151,8 @@ chuva.addEventListener('click', function(){
   icons.resetBgAndLogo(bgKonoha,logoKonoha)
   icons.resetBgAndLogo(bgAreia, logoAreia)
   icons.resetBgAndLogo(bgPedra, logoPedra)
+  icons.background(pain)
+
   
   traçoKonoha.classList.add('hide')
   traçoAreia.classList.add('hide')

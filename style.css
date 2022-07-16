@@ -11,6 +11,13 @@
   box-sizing: border-box;
 }
 
+.bg{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  
+}
+
+
 main{
   font-family: 'Roboto', sans-serif;
   font-size: 12.6rem;

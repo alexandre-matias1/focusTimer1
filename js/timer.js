@@ -2,7 +2,8 @@ export function Timer({
     minutesDisplay, 
     secondsDisplay, 
     timerTimeout,
-    minutes
+    minutes,
+    bg
 }){
 
    
@@ -14,6 +15,7 @@ export function Timer({
       function resetTimer(){
         updateTimerDisplay(25, 0)
         clearTimeout(timerTimeout)
+        bg.style.background = "#FFFFFF"
         return 25
       }
 

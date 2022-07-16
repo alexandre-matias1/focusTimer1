@@ -15,6 +15,7 @@ const traçoPedra = document.querySelector(".traçoPedra")
 const chuva = document.querySelector(".chuva")
 const traçoChuva = document.querySelector(".traçoChuva")
 const akatsuki = document.querySelector(".akatsuki")
+const bg = document.querySelector(".background")
 
 const bgKonoha = document.querySelector(".bg-konoha")
 const bgAreia = document.querySelector(".bg-areia")
@@ -26,6 +27,10 @@ const logoAreia = document.querySelector(".logo-areia")
 const logoPedra = document.querySelector(".logo-pedra")
 const logoChuva = document.querySelector(".logo-chuva")
 
+const itachi = "url(https://popularanime.com.br/wp-content/uploads/2021/11/itachi-1-1200x675.jpg)"
+const sasori = "url(https://criticalhits.com.br/wp-content/uploads/2022/04/sasori.jpg)"
+const deidara = "url(https://s.aficionados.com.br/imagens/deidara-1_cke.jpg)"
+const pain = "url(https://pbs.twimg.com/media/EgnI5FpX0AIO03c.jpg)"
 
 export {
   buttonPlay,
@@ -51,5 +56,10 @@ export {
   logoKonoha,
   logoAreia,
   logoChuva,
-  logoPedra
+  logoPedra,
+  bg,
+  itachi,
+  sasori,
+  pain,
+  deidara
 }

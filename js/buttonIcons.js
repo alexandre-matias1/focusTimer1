@@ -11,7 +11,22 @@ export function Icons({
     traçoAreia,
     traçoPedra,
     traçoChuva,
+    bg,
+    itachi,
+    sasori,
+    deidara,
+    pain
+
+
     }) {
+    
+    
+        
+    function background(boneco){
+        bg.style.backgroundImage=boneco
+        bg.style.backgroundRepeat="no-repeat"
+        bg.style.backgroundSize="100% 100%"
+    }
     
     function resetButtons(){
     traçoKonoha.classList.add('hide')
@@ -45,6 +60,7 @@ export function Icons({
     clickIcon, 
     setBackground,
     resetBgAndLogo,
+    background
     }
     
 }
